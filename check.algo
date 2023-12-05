@@ -14,25 +14,26 @@ begin
      nl:=0 ;
      nw:=0 ;
      nv:=0 ;
-     read("give me a sentence ")
-     write(ch)
+     write("give me a sentence ",ch)
+     read(ch)
      
 //  calcule de nb de caracteres
-for i from 0 to length(ch) do
+
+while (ch[nl]<>".")
     nl=nl+1;
- END_for
+ END_While
+ nl:=nl+1
  // calcule de nb de words
- i=0;
+ i:=0;
  repeat 
     if (ch[i]=" ")then 
         nw=nw+1;
-        i=0
+        i=i+1;
     end if 
 until (ch[i]=".")
 
 // calcule de nb de voyules
-for i from 0 to length(ch) do 
-    if (ch[i]=v[i])then
+if (ch[i]="A" OR ch[i]="a" ch[i]="E" ch[i]="e" ch[i]= "I" ch[i]="i" ch[i]="O" ch[i] = "o" ch[i] = "U" ch[i]= "u") then
         nv=nv+1;
 // affichage
 write ("the nbr of the carctere " ,nl)
