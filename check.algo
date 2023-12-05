@@ -1,0 +1,60 @@
+ALGORITHME "chaine"
+
+var  nl, nw , nv,i:INTGER;
+var v  , ch : STRING; 
+
+
+
+
+    
+begin
+    // Votre algorithme ici ! 🤓
+    // intialization des objet 
+    v :="aeiou"
+     nl:=0 ;
+     nw:=0 ;
+     nv:=0 ;
+     read("give me a sentence ")
+     write(ch)
+     
+//  calcule de nb de caracteres
+for i from 0 to length(ch) do
+    nl=nl+1;
+ END_for
+ // calcule de nb de words
+ i=0;
+ repeat 
+    if (ch[i]=" ")then 
+        nw=nw+1;
+        i=0
+    end if 
+until (ch[i]=".")
+
+// calcule de nb de voyules
+for i from 0 to length(ch) do 
+    if (ch[i]=v[i])then
+        nv=nv+1;
+// affichage
+write ("the nbr of the carctere " ,nl)
+write ("the nbr of words" ,nw)
+write ("the nbr of voyules" ,nv)
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+end
